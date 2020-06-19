@@ -1,3 +1,5 @@
+import os,sys
+sys.path.append(os.getcwd())
 from awesomecode.utils import add, remove_spaces
 import pytest
 
