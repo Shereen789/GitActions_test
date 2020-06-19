@@ -3,7 +3,6 @@ sys.path.append(os.getcwd())
 from awesomecode.utils import add, remove_spaces
 import pytest
 
-
 @pytest.mark.parametrize('x, y, result', [
     (10, 10, 20),
     (5, 5, 10),
@@ -12,11 +11,11 @@ import pytest
 def test_add(x, y, result):
     assert add(x, y) == result
 
-
 @pytest.mark.parametrize('data, result', [
     ('john doe', 'johndoe'),
     ('john        doe', 'johndoe'),
     (' ', '')
 ])
+
 def test_remove_spaces(data, result):
     assert remove_spaces(data) == result
